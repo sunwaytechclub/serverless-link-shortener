@@ -1,3 +1,5 @@
+const { links } = require("../models/index");
+
 module.exports = async (e) => {
   return {
     statusCode: 200,

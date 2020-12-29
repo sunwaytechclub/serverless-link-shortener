@@ -3,6 +3,25 @@
     "serverless-api-gateway-caching": "^1.6.0"
   },
   "dependencies": {
+    "aws-sdk": "^2.818.0",
     "nodemon": "^2.0.6"
-  }
+  },
+  "name": "link-shorterner",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pupubird/serverless-link-shorterner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pupubird/serverless-link-shorterner/issues"
+  },
+  "homepage": "https://github.com/pupubird/serverless-link-shorterner#readme",
+  "description": ""
 }

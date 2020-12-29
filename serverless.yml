@@ -1,3 +1,4 @@
+app: link-shorterner
 service: link-shorterner
 
 plugins:
@@ -13,17 +14,19 @@ custom:
 provider:
   name: aws
   runtime: nodejs12.x
+  apiGateway:
+    shouldStartNameWithService: true
 
 functions:
-  link:
-    handler: handler.link
+  getLink:
+    handler: handler.getLink
     events:
       - http:
           path: /{link}
           method: get
           caching:
             enabled: true
-  shortern:
+  shorternLink:
     handler: handler.shorternLink
     events:
       - http:

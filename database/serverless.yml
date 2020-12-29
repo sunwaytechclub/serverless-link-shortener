@@ -1,0 +1,13 @@
+component: aws-dynamodb
+name: database
+
+inputs:
+  name: ${name}-${stage}
+  # Don't delete the Database Table if "serverless remove" is run
+  deletionPolicy: retain
+  # Simple, single-table design
+  attributeDefinitions:
+    - AttributeName: shortname
+      AttributeType: S
+    - AttributeName: url
+      AttributeType: S

@@ -23,3 +23,9 @@ functions:
           method: get
           caching:
             enabled: true
+  shortern:
+    handler: handler.shorternLink
+    events:
+      - http:
+          path: /
+          method: post

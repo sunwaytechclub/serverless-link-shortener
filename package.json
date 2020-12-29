@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "serverless-api-gateway-caching": "^1.6.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

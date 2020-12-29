@@ -16,6 +16,14 @@ provider:
   runtime: nodejs12.x
   apiGateway:
     shouldStartNameWithService: true
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+      Resource: "*"
 
 functions:
   getLink:
@@ -32,3 +40,22 @@ functions:
       - http:
           path: /
           method: post
+
+resources:
+  Resources:
+    CandidatesDynamoDbTable:
+      Type: "AWS::DynamoDB::Table"
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: shortname
+            AttributeType: S
+        KeySchema:
+          - AttributeName: shortname
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        StreamSpecification:
+          StreamViewType: "NEW_AND_OLD_IMAGES"
+        TableName: linkShorterner

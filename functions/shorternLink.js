@@ -1,13 +1,21 @@
+const { links } = require("../models/index");
+
 module.exports = async (e) => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: "Go Serverless v1.0! Your function executed successfully!",
-        input: e,
-      },
-      null,
-      2
-    ),
-  };
+  if (typeof e["body"] == "string") {
+    e["body"] = JSON.parse(e["body"]);
+  }
+  let { url, name } = e["body"];
+  try {
+    await links.register(url, name);
+    return {
+      statusCode: 200,
+      body: name,
+    };
+  } catch (error) {
+    console.log(error);
+    return {
+      statusCode: 400,
+      body: `Invalid name: ${name} was already registered`,
+    };
+  }
 };

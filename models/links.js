@@ -18,7 +18,8 @@ const register = async (link, preferName) => {
   };
 
   const existingLink = await getLinkByName(preferName);
-  if (existingLink) {
+  if (existingLink["Count"] > 0) {
+    console.log(existingLink);
     throw new Error(`Invalid name: ${preferName} was already registered`);
   }
 

@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://github.com/pupubird/serverless-link-shorterner/blob/master/icon.png" alt="Project logo"></a>
+</p>
+
+<div align="center">
+<h5>*Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*</h5>
+</div>
+
 <h3 align="center">Serverless Link Shorterner</h3>
 
 <div align="center">

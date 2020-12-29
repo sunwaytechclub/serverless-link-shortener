@@ -1,0 +1,25 @@
+service: link-shorterner
+
+plugins:
+  - serverless-api-gateway-caching
+
+frameworkVersion: "2"
+
+custom:
+  apiGatewayCaching:
+    enabled: true
+    ttlInSeconds: 3600
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  link:
+    handler: handler.link
+    events:
+      - http:
+          path: /{link}
+          method: get
+          caching:
+            enabled: true

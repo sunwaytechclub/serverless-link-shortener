@@ -5,7 +5,7 @@ module.exports = async (e) => {
   let { link } = pathParameters;
 
   let existingLink = await links.getLinkByName(link);
-  if (!existingLink) {
+  if (!existingLink["Count"]) {
     return {
       statusCode: 404,
       body: JSON.stringify({
@@ -14,7 +14,10 @@ module.exports = async (e) => {
     };
   }
   return {
-    statusCode: 200,
-    body: JSON.stringify(existingLink),
+    statusCode: 301,
+    headers: {
+      Location: existingLink["Items"][0]["url"],
+    },
+    body: existingLink["Items"][0]["url"],
   };
 };

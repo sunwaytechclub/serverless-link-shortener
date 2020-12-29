@@ -76,7 +76,9 @@ POST - `https://<your_url>/`:
 
 This project had been setup completely with `serverless`, to deploy, simply run:
 
-`serverless deploy`
+```
+serverless deploy
+```
 
 You should be seeing an API gateway spun up with similar url like `https://8onb6olqak.execute-api.us-east-1.amazonaws.com/prod/`
 

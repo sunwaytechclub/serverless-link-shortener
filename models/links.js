@@ -10,7 +10,7 @@ const dynamodb = new AWS.DynamoDB.DocumentClient({
  */
 const register = async (link, preferName) => {
   const params = {
-    TableName: "linkShorterner",
+    TableName: "linkShorternerDB",
     Item: {
       shortname: preferName,
       url: link,
@@ -31,7 +31,7 @@ const register = async (link, preferName) => {
  */
 const getLinkByName = async (name) => {
   const params = {
-    TableName: "linkShorterner",
+    TableName: "linkShorternerDB",
     KeyConditionExpression: "shortname = :shortname",
     ExpressionAttributeValues: {
       ":shortname": name,

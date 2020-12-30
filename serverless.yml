@@ -1,5 +1,5 @@
-app: link-shorterner
-service: link-shorterner
+app: link-shortener
+service: link-shortener
 
 plugins:
   - serverless-api-gateway-caching
@@ -38,8 +38,8 @@ functions:
             cacheKeyParameters:
               - name: request.path.link
 
-  shorternLink:
-    handler: handler.shorternLink
+  shortenLink:
+    handler: handler.shortenLink
     events:
       - http:
           path: /

@@ -1,25 +1,25 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://github.com/pupubird/serverless-link-shorterner/blob/master/icon.png" alt="Project logo"></a>
+ <img width=200px height=200px src="https://github.com/pupubird/serverless-link-shortener/blob/master/icon.png" alt="Project logo"></a>
 </p>
 
 <div align="center">
 <h5>*Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*</h5>
 </div>
 
-<h3 align="center">Serverless Link Shorterner</h3>
+<h3 align="center">Serverless Link Shortener</h3>
 
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/pupubird/serverless-link-shorterner.svg)](https://github.com/pupubird/serverless-link-shorterner/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/pupubird/serverless-link-shorterner.svg)](https://github.com/pupubird/serverless-link-shorterner/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/pupubird/serverless-link-shortener.svg)](https://github.com/pupubird/serverless-link-shortener/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/pupubird/serverless-link-shortener.svg)](https://github.com/pupubird/serverless-link-shortener/pulls)
 
 </div>
 
 ---
 
-<p align="center"> A serverless link shorterner hosted on AWS.
+<p align="center"> A serverless link shortener hosted on AWS.
     <br> 
 </p>
 
@@ -33,7 +33,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This serverless application is a typical link shorterner, but hosted serverlessly.
+This serverless application is a typical link shortener, but hosted serverlessly.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 

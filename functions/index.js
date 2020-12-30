@@ -1,7 +1,7 @@
 const getLink = require("./getLink");
-const shorternLink = require("./shorternLink");
+const shortenLink = require("./shortenLink");
 
 module.exports = {
   getLink,
-  shorternLink,
+  shortenLink,
 };

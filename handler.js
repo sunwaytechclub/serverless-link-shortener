@@ -1,7 +1,7 @@
 "use strict";
-const { shorternLink, getLink } = require("./functions/index");
+const { shortenLink, getLink } = require("./functions/index");
 
 module.exports = {
-  shorternLink,
+  shortenLink,
   getLink,
 };

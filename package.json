@@ -6,7 +6,7 @@
     "aws-sdk": "^2.818.0",
     "nodemon": "^2.0.6"
   },
-  "name": "link-shorterner",
+  "name": "link-shortener",
   "version": "1.0.0",
   "main": "handler.js",
   "scripts": {
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pupubird/serverless-link-shorterner.git"
+    "url": "git+https://github.com/pupubird/serverless-link-shortener.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pupubird/serverless-link-shorterner/issues"
+    "url": "https://github.com/pupubird/serverless-link-shortener/issues"
   },
-  "homepage": "https://github.com/pupubird/serverless-link-shorterner#readme",
+  "homepage": "https://github.com/pupubird/serverless-link-shortener#readme",
   "description": ""
 }

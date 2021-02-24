@@ -1,6 +1,12 @@
 const { links } = require("../models/index");
 
 module.exports = async (e) => {
+  if (e["headers"]["X-Token"] !== process.env.API_TOKEN) {
+    return {
+      statusCode: 401,
+      body: `Unauthorized`,
+    };
+  }
   if (typeof e["body"] == "string") {
     e["body"] = JSON.parse(e["body"]);
   }

@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "serverless-api-gateway-caching": "^1.6.0"
+    "serverless-api-gateway-caching": "^1.6.0",
+    "serverless-dotenv-plugin": "^3.8.0"
   },
   "dependencies": {
     "aws-sdk": "^2.818.0",

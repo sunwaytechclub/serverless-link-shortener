@@ -71,6 +71,7 @@ POST - `https://<your_url>/`:
 - A post request with the following field:
   - name: The name of the shorterned url
   - url: The actual url that will be redirected to
+- You will need to add `X-Token` to your request's header with the token, else you will get `Unauthorized` response ( You may ask the committee incharge for the API token )
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
